@@ -1,0 +1,16 @@
+import office.context
+import office.ui
+
+def on_button_click(context):
+    # Do something when the button is clicked.
+    print("The button was clicked!")
+
+def main():
+    # Create a ribbon button.
+    button = office.ui.RibbonButton("My Button", on_button_click)
+
+    # Add the button to the ribbon.
+    context.ui.ribbon.add_button(button)
+
+if __name__ == "__main__":
+    main()
